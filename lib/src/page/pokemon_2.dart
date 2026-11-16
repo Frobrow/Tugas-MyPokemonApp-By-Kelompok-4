@@ -21,11 +21,28 @@ class Pokemon2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('My Pokemon App')),
+      appBar: AppBar(
+        title: Text("My Pokemon App"),
+      ),
       body: ListView.builder(
         itemCount: listPokemon.length,
         itemBuilder: (context, index) {
-          return ListTile(title: Text(listPokemon[index].name));
+          return Container(
+            padding: EdgeInsets.all(20),
+            child: Row(
+              children: [
+                Container(
+                  width: 100,
+                  padding: EdgeInsets.only(right: 20),
+                  child: Image.asset("images/zubat.png"),
+                  ),
+                  Text(
+                    listPokemon[index].name,
+                    style: TextStyle(fontSize: 20),
+                )
+              ]
+            ),
+          );
         },
       ),
     );
