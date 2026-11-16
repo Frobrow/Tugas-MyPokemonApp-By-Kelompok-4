@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_pokemon_app/src/pokemon.dart';
+import 'package:my_pokemon_app/src/page/pokemon_2.dart';
 
 void main() {
   // runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyAppNew extends StatelessWidget {
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Pokemon(),
+      home: Pokemon2(),
     );
   }
 }
