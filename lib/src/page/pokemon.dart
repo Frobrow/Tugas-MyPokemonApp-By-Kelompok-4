@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_function_literals_in_foreach_calls, avoid_print
+
 import 'package:flutter/material.dart';
 
 class Pokemon extends StatelessWidget {
@@ -30,6 +32,7 @@ class Pokemon extends StatelessWidget {
       appBar: AppBar(
         title: Text("My Pokemon App"),
       ),
+      // ignore: avoid_unnecessary_containers
       body: Container(
         child: Image.asset("images/zubat.png"),
       ),

@@ -34,7 +34,7 @@ class Pokemon2 extends StatelessWidget {
                 Container(
                   width: 100,
                   padding: EdgeInsets.only(right: 20),
-                  child: Image.asset("images/zubat.png"),
+                  child: Image.asset(listPokemon[index].image),
                   ),
                   Text(
                     listPokemon[index].name,

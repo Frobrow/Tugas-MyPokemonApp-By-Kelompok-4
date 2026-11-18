@@ -34,6 +34,7 @@ class Pokemon extends StatelessWidget {
       appBar: AppBar(
         title: Text("My Pokemon App"),
       ),
+      // ignore: avoid_unnecessary_containers
       body: Container(
         child: Image.asset("images/zubat.png"),
       ),
